@@ -1,0 +1,28 @@
+# Servidor de desenvolvimento
+
+Host meu-servidor
+    HostName 192.168.1.100
+    User ubuntu
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+
+# GitHub usando uma chave específica
+
+Host github
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_github
+
+# Servidor com porta personalizada
+
+Host producao
+    HostName servidor.exemplo.com
+    User deploy
+    Port 2222
+    IdentityFile ~/.ssh/id_ed25519_producaos
+
+Host mercadoparts
+    HostName servidor.exemplo.com
+    User usuario
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
